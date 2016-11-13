@@ -15,8 +15,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Ingresos" />
+        <activity android:name=".MenuPrincipal" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Login" />
+        <activity android:name=".Deducciones" />
         <activity android:name=".Usuarios" />
-        <activity android:name=".Ingresos"></activity>
+        <activity android:name=".Calculadora" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".Donaciones" />
+        <activity android:name=".Comprar" />
+        <activity android:name=".Splash"></activity>
     </application>
 
 </manifest>

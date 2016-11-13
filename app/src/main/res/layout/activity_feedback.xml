@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.nicarial.nicarial.Feedback">
+
+    <TextView
+        android:text="Envianos tus Comentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView28"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Enviar Comentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/button4"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_marginTop="21dp"
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:text="Bacon ipsum dolor amet shank shankle fatback ham hock corned beef leberkas tenderloin spare ribs doner shoulder kielbasa kevin. Porchetta tenderloin doner corned beef hamburger short ribs cow pig. Sausage bresaola beef biltong. Meatloaf meatball pastrami, tenderloin venison cupim shoulder biltong tail tri-tip pork chop kevin alcatra. Drumstick pig sirloin, pork chop frankfurter tail chicken ham hock biltong salami tri-tip doner."
+        android:layout_below="@+id/textView28"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

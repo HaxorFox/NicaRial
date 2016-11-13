@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.nicarial.nicarial.Ingresos">
+    tools:context="com.nicarial.nicarial.Ingresos"
+    android:addStatesFromChildren="false">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,7 +23,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:id="@+id/textView4" />
+            android:id="@+id/textView4"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
 
         <Spinner
             android:layout_width="match_parent"
@@ -51,7 +54,8 @@
             android:layout_marginTop="15dp"
             android:layout_below="@+id/textView4"
             android:layout_toStartOf="@+id/textView4"
-            android:layout_marginEnd="18dp" />
+            android:layout_marginEnd="18dp"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:text="Vacaciones:"
@@ -60,7 +64,8 @@
             android:id="@+id/textView8"
             android:layout_alignBaseline="@+id/editText7"
             android:layout_alignBottom="@+id/editText7"
-            android:layout_alignStart="@+id/textView6" />
+            android:layout_alignStart="@+id/textView6"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:text="Salario Básico:"
@@ -69,7 +74,8 @@
             android:id="@+id/textView6"
             android:layout_alignBaseline="@+id/editText3"
             android:layout_alignBottom="@+id/editText3"
-            android:layout_alignStart="@+id/textView5" />
+            android:layout_alignStart="@+id/textView5"
+            android:textStyle="normal|bold" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -146,7 +152,8 @@
             android:id="@+id/textView7"
             android:layout_marginTop="14dp"
             android:layout_below="@+id/editText3"
-            android:layout_alignStart="@+id/textView8" />
+            android:layout_alignStart="@+id/textView8"
+            android:textStyle="normal|bold" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -166,7 +173,8 @@
             android:id="@+id/textView9"
             android:layout_alignBaseline="@+id/editText8"
             android:layout_alignBottom="@+id/editText8"
-            android:layout_alignStart="@+id/textView10" />
+            android:layout_alignStart="@+id/textView10"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:text="Otros Ingresos:"
@@ -175,7 +183,8 @@
             android:id="@+id/textView13"
             android:layout_alignBaseline="@+id/editText10"
             android:layout_alignBottom="@+id/editText10"
-            android:layout_alignStart="@+id/textView10" />
+            android:layout_alignStart="@+id/textView10"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:text="Viático:"
@@ -184,15 +193,8 @@
             android:id="@+id/textView12"
             android:layout_alignBaseline="@+id/editText11"
             android:layout_alignBottom="@+id/editText11"
-            android:layout_alignStart="@+id/textView13" />
-
-        <TextView
-            android:text="Horas Extras:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView10"
-            android:layout_centerVertical="true"
-            android:layout_alignStart="@+id/textView8" />
+            android:layout_alignStart="@+id/textView13"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:text="Total Ingresos:"
@@ -201,7 +203,18 @@
             android:id="@+id/textView14"
             android:layout_alignBaseline="@+id/editText12"
             android:layout_alignBottom="@+id/editText12"
-            android:layout_alignEnd="@+id/textView6" />
+            android:textStyle="normal|bold"
+            android:layout_toStartOf="@+id/textView4" />
+
+        <TextView
+            android:text="Horas Extras:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:layout_alignBaseline="@+id/editText9"
+            android:layout_alignBottom="@+id/editText9"
+            android:layout_alignParentStart="true"
+            android:textStyle="normal|bold" />
 
     </RelativeLayout>
 </RelativeLayout>
