@@ -12,7 +12,7 @@
     tools:context="com.nicarial.nicarial.Splash">
 
     <TextView
-        android:text="NicaRial"
+        android:text="@string/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView33"
@@ -25,17 +25,9 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:srcCompat="@drawable/spinner"
+        android:contentDescription="@string/spinner_desc"
         android:id="@+id/imageView20"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="56dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo"
-        android:layout_marginTop="41dp"
-        android:id="@+id/imageView18"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 </RelativeLayout>
