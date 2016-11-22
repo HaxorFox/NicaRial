@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">NicaRial</string>
     <string name="spinner_desc">Placeholder</string>
+    <string name="title_activity_menuprincipal">Menú Principal</string>
     <string name="title_activity_usuarios">Inicio de Sesión</string>
-    <string name="title_activity_splash">Splash</string>
     <string name="title_activity_calculadora">Calculadora</string>
 </resources>
