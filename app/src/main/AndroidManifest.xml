@@ -36,7 +36,7 @@
             android:name=".Usuarios"
             android:label="Usuarios" />
         <activity
-            android:name=".Calculadora"
+            android:name=".CalculadoraActivity"
             android:label="Calculadora" />
         <activity
             android:name=".Feedback"
