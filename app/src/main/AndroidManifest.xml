@@ -17,18 +17,36 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Ingresos" />
+        <activity
+            android:name=".Ingresos"
+            android:label="Ingresos" />
         <activity
             android:name=".MenuPrincipal"
             android:label="Menu Principal" />
-        <activity android:name=".Settings" />
-        <activity android:name=".Login" />
-        <activity android:name=".Deducciones" />
-        <activity android:name=".Usuarios" />
-        <activity android:name=".Calculadora" />
-        <activity android:name=".Feedback" />
-        <activity android:name=".Donaciones" />
-        <activity android:name=".Comprar" />
+        <activity
+            android:name=".Settings"
+            android:label="Configuración" />
+        <activity
+            android:name=".Login"
+            android:label="Inicio de Sesión" />
+        <activity
+            android:name=".Deducciones"
+            android:label="Deducciones" />
+        <activity
+            android:name=".Usuarios"
+            android:label="Usuarios" />
+        <activity
+            android:name=".Calculadora"
+            android:label="Calculadora" />
+        <activity
+            android:name=".Feedback"
+            android:label="Feedback" />
+        <activity
+            android:name=".Donaciones"
+            android:label="Donaciones" />
+        <activity
+            android:name=".Comprar"
+            android:label="Comprar Versión de Paga" />
 
 
     </application>
