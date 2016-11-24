@@ -37,5 +37,13 @@ public class MenuPrincipal extends AppCompatActivity {
             }
         });
 
+        ImageView ivfeedback = (ImageView) findViewById(R.id.ivfeedback);
+        ivfeedback.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent4 = new Intent(v.getContext(), FeedbackActivity.class);
+                startActivityForResult(intent4, 0);
+            }
+        });
+
     }
 }
