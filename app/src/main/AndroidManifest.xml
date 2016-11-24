@@ -30,7 +30,7 @@
             android:name=".Login"
             android:label="Inicio de Sesión" />
         <activity
-            android:name=".Deducciones"
+            android:name=".DeduccionesActivity"
             android:label="Deducciones" />
         <activity
             android:name=".Usuarios"
@@ -42,10 +42,10 @@
             android:name=".Feedback"
             android:label="Feedback" />
         <activity
-            android:name=".Donaciones"
+            android:name=".DonacionesActivity"
             android:label="Donaciones" />
         <activity
-            android:name=".Comprar"
+            android:name=".ComprarActivity"
             android:label="Comprar Versión de Paga" />
 
 
