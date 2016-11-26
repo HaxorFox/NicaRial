@@ -9,7 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.nicarial.nicarial.MenuPrincipal">
+    tools:context="com.nicarial.nicarial.MenuPrincipal"
+    android:isScrollContainer="true">
 
     <LinearLayout
         android:orientation="vertical"
@@ -34,18 +35,18 @@
                 android:textAlignment="center"
 
                 android:background="@color/gray"
-                android:gravity="bottom|center_vertical|center_horizontal"
-                android:layout_marginBottom="10dp" />
+                android:gravity="bottom|center_vertical|center_horizontal" />
 
 
             <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="50dp"
                 app:srcCompat="@drawable/calculator"
                 android:id="@+id/ivcalculator"
                 android:layout_alignParentTop="false"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="20dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true" />
 
         </RelativeLayout>
 
@@ -62,7 +63,6 @@
                 android:layout_height="match_parent"
                 android:id="@+id/btn_feed"
                 android:background="@color/color1"
-                android:layout_marginBottom="10dp"
                 android:elevation="1dp"
                 android:gravity="bottom|center_horizontal" />
 
@@ -72,8 +72,34 @@
                 android:layout_alignParentTop="false"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp" />
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_border"
+            android:layout_weight="0.25"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:text="Acerca"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_info"
+                android:gravity="bottom|center_horizontal"
+                android:background="@color/gray" />
+
+            <ImageView
+                app:srcCompat="@drawable/about"
+                android:id="@+id/imageView8"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentStart="false"
+                android:layout_centerInParent="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -92,8 +118,7 @@
                 android:layout_height="match_parent"
                 android:id="@+id/btn_salir"
                 android:background="@color/gray"
-                android:gravity="bottom|center_vertical|center_horizontal"
-                android:layout_marginBottom="10dp" />
+                android:gravity="bottom|center_vertical|center_horizontal" />
 
             <ImageView
                 android:layout_width="50dp"
@@ -103,6 +128,7 @@
                 android:foregroundGravity="center"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true" />
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -137,6 +163,7 @@
                 android:layout_marginStart="36dp"
                 android:layout_alignTop="@+id/imageView6"
                 android:layout_toEndOf="@+id/imageView6" />
+
         </RelativeLayout>
 
     </LinearLayout>
