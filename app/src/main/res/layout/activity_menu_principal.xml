@@ -11,134 +11,135 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.nicarial.nicarial.MenuPrincipal">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/face"
-        android:id="@+id/imageView2"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:srcCompat="@drawable/calculator"
-        android:id="@+id/ivcalculator"
-        android:layout_alignTop="@+id/ivdonation"
-        android:layout_toEndOf="@+id/imageView7"
-        android:layout_marginStart="10dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_border"
+            android:layout_weight="0.25"
+            android:layout_marginBottom="8dp">
 
-    <ImageView
-        app:srcCompat="@drawable/donation"
-        android:id="@+id/ivdonation"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_alignTop="@+id/ivuser"
-        android:scrollbarAlwaysDrawHorizontalTrack="false"
-        android:soundEffectsEnabled="false"
-        android:adjustViewBounds="false"
-        android:cropToPadding="false"
-        android:fadeScrollbars="false"
-        android:layout_centerHorizontal="true"
-        android:nestedScrollingEnabled="false" />
 
-    <ImageView
-        app:srcCompat="@drawable/adduser"
-        android:id="@+id/ivuser"
-        android:layout_marginTop="69dp"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="24dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+            <Button
+                android:text="Deducciones"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_deduc"
+                android:textAlignment="center"
 
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:srcCompat="@drawable/graph"
-        android:layout_marginTop="14dp"
-        android:id="@+id/ivingresos"
-        android:layout_below="@+id/ivuser"
-        android:layout_alignStart="@+id/ivuser" />
+                android:background="@color/gray"
+                android:gravity="bottom|center_vertical|center_horizontal"
+                android:layout_marginBottom="10dp" />
 
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:srcCompat="@drawable/lock"
-        android:id="@+id/imageView14"
-        android:layout_alignTop="@+id/ivingresos"
-        android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:srcCompat="@drawable/calendar"
-        android:id="@+id/ivcalendar"
-        android:layout_alignTop="@+id/imageView14"
-        android:layout_alignStart="@+id/ivcalculator" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/calculator"
+                android:id="@+id/ivcalculator"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
 
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:srcCompat="@drawable/chat"
-        android:id="@+id/ivfeedback"
-        android:layout_alignTop="@+id/ivincognito"
-        android:layout_centerHorizontal="true" />
+        </RelativeLayout>
 
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:srcCompat="@drawable/secret"
-        android:id="@+id/ivincognito"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/ivingresos"
-        android:layout_alignStart="@+id/ivingresos" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_border"
+            android:layout_weight="0.25"
+            android:layout_marginBottom="8dp">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/shutdown"
-        android:id="@+id/ivshutdown"
-        android:layout_below="@+id/ivfeedback"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp" />
+            <Button
+                android:text="FeedBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_feed"
+                android:background="@color/color1"
+                android:layout_marginBottom="10dp"
+                android:elevation="1dp"
+                android:gravity="bottom|center_horizontal" />
 
-    <ImageView
-        android:layout_width="50dp"
-        app:srcCompat="@drawable/like"
-        android:id="@+id/imageView7"
-        android:layout_height="50dp"
-        android:layout_marginEnd="15dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/imageView6" />
+            <ImageView
+                app:srcCompat="@drawable/chat"
+                android:id="@+id/ivfeedback"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </RelativeLayout>
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/thumbsdown"
-        android:id="@+id/imageView6"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/imageView2"
-        android:layout_marginEnd="7dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
 
-    <TextView
-        android:text="Elige tu Opción"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvmenuprincipal"
-        android:layout_marginTop="15dp"
-        android:textSize="24sp"
-        android:textStyle="normal|bold"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:srcCompat="@drawable/language"
-        android:id="@+id/ivsettings"
-        android:layout_alignTop="@+id/ivfeedback"
-        android:layout_alignStart="@+id/ivcalendar" />
+
+            android:background="@drawable/layout_border"
+            android:layout_weight="0.25"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:text="Salir"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_salir"
+                android:background="@color/gray"
+                android:gravity="bottom|center_vertical|center_horizontal"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/shutdown"
+                android:id="@+id/ivshutdown"
+                android:foregroundGravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.25">
+
+            <ImageView
+                android:layout_width="50dp"
+                app:srcCompat="@drawable/like"
+                android:id="@+id/imageView7"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="49dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/thumbsdown"
+                android:id="@+id/imageView6"
+                android:layout_alignTop="@+id/imageView7"
+                android:layout_toEndOf="@+id/imageView7"
+                android:layout_marginStart="48dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/face"
+                android:id="@+id/imageView2"
+                android:layout_marginStart="36dp"
+                android:layout_alignTop="@+id/imageView6"
+                android:layout_toEndOf="@+id/imageView6" />
+        </RelativeLayout>
+
+    </LinearLayout>
 
 
 </RelativeLayout>
