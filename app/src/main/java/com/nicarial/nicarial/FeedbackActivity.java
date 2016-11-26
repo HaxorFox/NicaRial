@@ -3,7 +3,7 @@ package com.nicarial.nicarial;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Feedback extends AppCompatActivity {
+public class FeedbackActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -3,11 +3,11 @@ package com.nicarial.nicarial;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Deducciones extends AppCompatActivity {
+public class DonacionesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_deducciones);
+        setContentView(R.layout.activity_donaciones);
     }
 }

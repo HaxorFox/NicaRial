@@ -17,18 +17,44 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Ingresos" />
+        <activity
+            android:name=".Ingresos"
+            android:label="Ingresos"
+            android:parentActivityName=".MenuPrincipal" />
         <activity
             android:name=".MenuPrincipal"
             android:label="Menu Principal" />
-        <activity android:name=".Settings" />
-        <activity android:name=".Login" />
-        <activity android:name=".Deducciones" />
-        <activity android:name=".Usuarios" />
-        <activity android:name=".Calculadora" />
-        <activity android:name=".Feedback" />
-        <activity android:name=".Donaciones" />
-        <activity android:name=".Comprar" />
+        <activity
+            android:name=".Settings"
+            android:label="Configuración"
+            android:parentActivityName=".MenuPrincipal" />
+        <activity
+            android:name=".Login"
+            android:label="Inicio de Sesión" />
+        <activity
+            android:name=".DeduccionesActivity"
+            android:label="Deducciones"
+            android:parentActivityName=".Ingresos" />
+        <activity
+            android:name=".Usuarios"
+            android:label="Usuarios"
+            android:parentActivityName=".MenuPrincipal" />
+        <activity
+            android:name=".CalculadoraActivity"
+            android:label="Calculadora"
+            android:parentActivityName=".MenuPrincipal" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="Feedback"
+            android:parentActivityName=".MenuPrincipal" />
+        <activity
+            android:name=".DonacionesActivity"
+            android:label="Donaciones"
+            android:parentActivityName=".MenuPrincipal" />
+        <activity
+            android:name=".ComprarActivity"
+            android:label="Comprar Versión de Paga"
+            android:parentActivityName=".MenuPrincipal" />
 
 
     </application>
