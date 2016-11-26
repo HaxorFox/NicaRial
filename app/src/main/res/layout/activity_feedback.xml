@@ -40,4 +40,13 @@
         android:text="Bacon ipsum dolor amet shank shankle fatback ham hock corned beef leberkas tenderloin spare ribs doner shoulder kielbasa kevin. Porchetta tenderloin doner corned beef hamburger short ribs cow pig. Sausage bresaola beef biltong. Meatloaf meatball pastrami, tenderloin venison cupim shoulder biltong tail tri-tip pork chop kevin alcatra. Drumstick pig sirloin, pork chop frankfurter tail chicken ham hock biltong salami tri-tip doner."
         android:layout_below="@+id/textView28"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Escriba sus comentarios y sugerencias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/button4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp" />
 </RelativeLayout>

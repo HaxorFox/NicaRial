@@ -20,90 +20,6 @@
         android:layout_alignParentEnd="true" />
 
     <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:srcCompat="@drawable/calculator"
-        android:id="@+id/ivcalculator"
-        android:layout_alignTop="@+id/ivdonation"
-        android:layout_toEndOf="@+id/imageView7"
-        android:layout_marginStart="10dp" />
-
-    <ImageView
-        app:srcCompat="@drawable/donation"
-        android:id="@+id/ivdonation"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_alignTop="@+id/ivuser"
-        android:scrollbarAlwaysDrawHorizontalTrack="false"
-        android:soundEffectsEnabled="false"
-        android:adjustViewBounds="false"
-        android:cropToPadding="false"
-        android:fadeScrollbars="false"
-        android:layout_centerHorizontal="true"
-        android:nestedScrollingEnabled="false" />
-
-    <ImageView
-        app:srcCompat="@drawable/adduser"
-        android:id="@+id/ivuser"
-        android:layout_marginTop="69dp"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="24dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:srcCompat="@drawable/graph"
-        android:layout_marginTop="14dp"
-        android:id="@+id/ivingresos"
-        android:layout_below="@+id/ivuser"
-        android:layout_alignStart="@+id/ivuser" />
-
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:srcCompat="@drawable/lock"
-        android:id="@+id/imageView14"
-        android:layout_alignTop="@+id/ivingresos"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:srcCompat="@drawable/calendar"
-        android:id="@+id/ivcalendar"
-        android:layout_alignTop="@+id/imageView14"
-        android:layout_alignStart="@+id/ivcalculator" />
-
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:srcCompat="@drawable/chat"
-        android:id="@+id/ivfeedback"
-        android:layout_alignTop="@+id/ivincognito"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:srcCompat="@drawable/secret"
-        android:id="@+id/ivincognito"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/ivingresos"
-        android:layout_alignStart="@+id/ivingresos" />
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/shutdown"
-        android:id="@+id/ivshutdown"
-        android:layout_below="@+id/ivfeedback"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp" />
-
-    <ImageView
         android:layout_width="50dp"
         app:srcCompat="@drawable/like"
         android:id="@+id/imageView7"
@@ -126,19 +42,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvmenuprincipal"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="11dp"
         android:textSize="24sp"
         android:textStyle="normal|bold"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/shutdown"
+        android:id="@+id/ivshutdown"
+        android:clickable="true"
+        tools:onClick="@android:string/yes"
+        android:onClick="@android:string/ok"
+        android:layout_above="@+id/imageView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78dp" />
+
+    <ImageView
         android:layout_width="75dp"
         android:layout_height="75dp"
-        app:srcCompat="@drawable/language"
-        android:id="@+id/ivsettings"
-        android:layout_alignTop="@+id/ivfeedback"
-        android:layout_alignStart="@+id/ivcalendar" />
+        app:srcCompat="@drawable/calculator"
+        android:id="@+id/ivcalculator"
+        android:layout_above="@+id/ivshutdown"
+        android:layout_toEndOf="@+id/tvmenuprincipal"
+        android:layout_marginBottom="81dp" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/chat"
+        android:id="@+id/ivfeedback"
+        android:layout_alignTop="@+id/ivcalculator"
+        android:layout_toStartOf="@+id/tvmenuprincipal" />
 
 
 </RelativeLayout>

@@ -13,18 +13,18 @@ public class MenuPrincipal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
 
-        ImageView ivuser = (ImageView) findViewById(R.id.ivuser);
+        /*ImageView ivuser = (ImageView) findViewById(R.id.ivuser);
         ivuser.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent1 = new Intent(v.getContext(), Usuarios.class);
                 startActivityForResult(intent1, 0);
             }
-        });
+        });*/
 
-        ImageView ivdonation = (ImageView) findViewById(R.id.ivdonation);
-        ivdonation.setOnClickListener(new View.OnClickListener() {
+      ImageView ivfeedback = (ImageView) findViewById(R.id.ivfeedback);
+        ivfeedback.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent2 = new Intent(v.getContext(), DonacionesActivity.class);
+                Intent intent2 = new Intent(v.getContext(), Feedback.class);
                 startActivityForResult(intent2, 0);
             }
         });
@@ -34,6 +34,14 @@ public class MenuPrincipal extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent3 = new Intent(v.getContext(), Ingresos.class);
                 startActivityForResult(intent3, 0);
+            }
+        });
+
+        ImageView ivshutdown = (ImageView) findViewById(R.id.ivshutdown);
+        ivshutdown.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent5 = new Intent(Intent.ACTION_MAIN);
+                finish();
             }
         });
 
