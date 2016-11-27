@@ -10,34 +10,77 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.nicarial.nicarial.FeedbackActivity">
 
-    <TextView
-        android:text="Envianos tus Comentarios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:id="@+id/textView28"
-        android:textSize="24sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textStyle="normal|bold" />
-
-    <Button
-        android:text="Enviar Comentarios"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:id="@+id/btn_submit"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true" />
+        android:layout_height="match_parent">
 
-    <EditText
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:layout_marginTop="21dp"
-        android:id="@+id/editText"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_below="@+id/textView28"
-        android:layout_centerHorizontal="true"
-        android:hint="Escribe tu comentario" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:id="@+id/titulo">
+
+            <TextView
+                android:text="Envianos tus Comentarios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:id="@+id/textView28"
+                android:textSize="24sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textStyle="normal|bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:id="@+id/nombre">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txt_nombre"
+                android:hint="Escribe tu nombre o nickname" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:id="@+id/comentario">
+
+            <EditText
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:layout_marginTop="21dp"
+                android:id="@+id/txt_comment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/textView28"
+                android:layout_centerHorizontal="true"
+                android:hint="Escribe tu comentario" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:id="@+id/bton">
+
+            <Button
+                android:text="Enviar Comentarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:id="@+id/btn_submit"
+                android:layout_below="@+id/txt_comment"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
 </RelativeLayout>
