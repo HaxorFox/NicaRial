@@ -7,17 +7,23 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class MenuPrincipal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
+        ButterKnife.bind(this);
 
 
         Button btn_deduc = (Button) findViewById(R.id.btn_deduc);
         btn_deduc.getBackground().setAlpha(20);
-
 
 
         Button btn_salir = (Button) findViewById(R.id.btn_salir);
@@ -46,8 +52,22 @@ public class MenuPrincipal extends AppCompatActivity {
                 startActivityForResult(intent4, 0);
             }
         });
+    }
+        @OnClick(R.id.btn_info)
+        public void open(View view) {
+            openAbout();
+        }
+
+        private void openAbout() {
+            Intent intent = new Intent(
+                    getApplicationContext(),
+                    AboutActivity.class);
+            startActivity(intent);
+        }
+
+
 
 
 
     }
-}
+
