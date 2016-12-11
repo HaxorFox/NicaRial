@@ -37,9 +37,9 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/txtinss"
         android:layout_toEndOf="@+id/textView24"
-        android:id="@+id/editText4"
+        android:id="@+id/txtirn"
         android:layout_alignStart="@+id/editText15"/>
 
     <TextView
@@ -48,8 +48,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView20"
         android:textStyle="normal|bold"
-        android:layout_alignBaseline="@+id/editText4"
-        android:layout_alignBottom="@+id/editText4"
+        android:layout_alignBaseline="@+id/txtirn"
+        android:layout_alignBottom="@+id/txtirn"
         android:layout_alignStart="@+id/textView18"/>
 
     <TextView
@@ -61,25 +61,6 @@
         android:id="@+id/txtDeducciones"/>
 
     <TextView
-        android:text="Total de Deducciones:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:id="@+id/textView25"
-        android:textStyle="normal|bold"
-        android:layout_below="@+id/editText15"
-        android:layout_alignStart="@+id/textView24"/>
-
-    <Button
-        android:text="Calcular Deducciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnDeducciones"
-        android:layout_above="@+id/txtDeducciones"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"/>
-
-    <TextView
         android:text="Otras deducciones:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,14 +68,6 @@
         android:textStyle="normal|bold"
         android:layout_centerVertical="true"
         android:layout_alignStart="@+id/textView21"/>
-
-    <TextView
-        android:text="Total a recibir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/TxtTotal"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/btnTotal"/>
 
     <Button
         android:text="Calcular total a recibir"
@@ -104,14 +77,6 @@
         android:layout_below="@+id/txtDeducciones"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp"/>
-
-    <TextView
-        android:text="Total"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ResulTotalaRecibir"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/textView25"/>
 
     <TextView
         android:text="Pago a empresa:"
@@ -139,7 +104,7 @@
         android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/editText6"
-        android:layout_below="@+id/editText4"
+        android:layout_below="@+id/txtirn"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/textView17"/>
 
@@ -148,10 +113,38 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText2"
+        android:id="@+id/txtinss"
         android:layout_alignBaseline="@+id/textView18"
         android:layout_alignBottom="@+id/textView18"
         android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/editText4"/>
+        android:layout_alignStart="@+id/txtirn"/>
+
+    <TextView
+        android:text="Total de Deducciones:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/textView25"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/editText15"
+        android:layout_alignEnd="@+id/textView21"/>
+
+    <TextView
+        android:text="Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ResulTotalaRecibir"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/editText6"
+        android:layout_marginBottom="38dp"/>
+
+    <TextView
+        android:text="Total a recibir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtTotal"
+        android:layout_alignBaseline="@+id/ResulTotalaRecibir"
+        android:layout_alignBottom="@+id/ResulTotalaRecibir"
+        android:layout_alignStart="@+id/textView20"/>
 
 </RelativeLayout>

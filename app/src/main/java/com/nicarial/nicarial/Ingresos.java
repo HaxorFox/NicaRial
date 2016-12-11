@@ -1,5 +1,6 @@
 package com.nicarial.nicarial;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +18,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 public class Ingresos extends AppCompatActivity {
 
     EditText n1,n2,n3,n4,n5,n6,n7,n8;
-
+    Button cal;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -35,8 +36,6 @@ public class Ingresos extends AppCompatActivity {
         n5 = (EditText) findViewById(R.id.editText9); //Horas Extras
         n6 = (EditText) findViewById(R.id.editText10);
         n7 = (EditText) findViewById(R.id.editText11);
-
-        //n8 = (EditText) findViewById(R.id.editText19); Vacaciones
 
 
         Button CalcIng = (Button) findViewById(R.id.btnIngresos);
@@ -56,17 +55,6 @@ public class Ingresos extends AppCompatActivity {
                 float num5 = new Float(n5.getText().toString());//Horas Extras
                 float num6 = new Float(n6.getText().toString());
                 float num7 = new Float(n7.getText().toString());
-                //float num8 = new Float(n8.getText().toString());//vacaciones
-
-
-/*                int aux1= Integer.valueOf(editText3.getText().toString());
-                int aux2= Integer.valueOf(editText5.getText().toString());
-                int aux3= Integer.valueOf(editText7.getText().toString());
-                int aux4= Integer.valueOf(editText8.getText().toString());
-                int aux5= Integer.valueOf(editText9.getText().toString());
-                int aux6= Integer.valueOf(editText10.getText().toString());
-        int aux7= Integer.valueOf(editText11.getText().toString());
-        int aux8= Integer.valueOf(editText19.getText().toString());*/
         int horasDiarias = 8;
         float vaca= (float) 2.5;
         float resulHoras = ((((num3/num1)/(horasDiarias))*(num5))*2);
@@ -75,6 +63,22 @@ public class Ingresos extends AppCompatActivity {
         vac.setText(""+resulvacas);
         ing.setText(""+resultado);
         hr.setText(""+resulHoras);
+
+                Intent Resul = new Intent(Ingresos.this, DeduccionesActivity.class);
+                Resul.putExtra("resultado", resultado);
+
+
+                Button Calc = (Button) findViewById(R.id.btnDedu);
+                //Calc = (Button) findViewById(R.id.btnDedu);
+                 //CalcDe= (Button) findViewById(R.id.btnDedu);
+
+                Calc.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(Ingresos.this, DeduccionesActivity.class));
+                    }
+                });
+
     }
 });
 
