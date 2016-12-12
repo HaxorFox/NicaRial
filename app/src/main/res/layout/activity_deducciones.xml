@@ -11,134 +11,6 @@
     tools:context="com.nicarial.nicarial.DeduccionesActivity">
 
     <TextView
-        android:text="Deducciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:id="@+id/textView17"
-        android:textSize="24sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textStyle="normal|bold" />
-
-    <TextView
-        android:text="INSS:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView17"
-        android:layout_toStartOf="@+id/textView17"
-        android:layout_marginTop="45dp"
-        android:id="@+id/textView18"
-        android:textSize="14sp"
-        android:textStyle="normal|bold" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:layout_below="@+id/txtinss"
-        android:layout_toEndOf="@+id/textView24"
-        android:id="@+id/txtirn"
-        android:layout_alignStart="@+id/editText15"/>
-
-    <TextView
-        android:text="IR:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView20"
-        android:textStyle="normal|bold"
-        android:layout_alignBaseline="@+id/txtirn"
-        android:layout_alignBottom="@+id/txtirn"
-        android:layout_alignStart="@+id/textView18"/>
-
-    <TextView
-        android:text="Total Deducciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView25"
-        android:layout_alignStart="@+id/editText15"
-        android:id="@+id/txtDeducciones"/>
-
-    <TextView
-        android:text="Otras deducciones:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView24"
-        android:textStyle="normal|bold"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/textView21"/>
-
-    <Button
-        android:text="Calcular total a recibir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnTotal"
-        android:layout_below="@+id/txtDeducciones"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="13dp"/>
-
-    <TextView
-        android:text="Pago a empresa:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView21"
-        android:textStyle="normal|bold"
-        android:layout_alignBaseline="@+id/editText6"
-        android:layout_alignBottom="@+id/editText6"
-        android:layout_alignStart="@+id/btnTotal"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/editText15"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/ResulTotalaRecibir"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/editText6"
-        android:layout_below="@+id/txtirn"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/textView17"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/txtinss"
-        android:layout_alignBaseline="@+id/textView18"
-        android:layout_alignBottom="@+id/textView18"
-        android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/txtirn"/>
-
-    <TextView
-        android:text="Total de Deducciones:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
-        android:id="@+id/textView25"
-        android:textStyle="normal|bold"
-        android:layout_below="@+id/editText15"
-        android:layout_alignEnd="@+id/textView21"/>
-
-    <TextView
-        android:text="Total"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ResulTotalaRecibir"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/editText6"
-        android:layout_marginBottom="38dp"/>
-
-    <TextView
         android:text="Total a recibir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -146,5 +18,134 @@
         android:layout_alignBaseline="@+id/ResulTotalaRecibir"
         android:layout_alignBottom="@+id/ResulTotalaRecibir"
         android:layout_alignStart="@+id/textView20"/>
+
+    <TextView
+        android:text="Total Deducciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDeducciones"
+        android:layout_alignBaseline="@+id/textView25"
+        android:layout_alignBottom="@+id/textView25"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="29dp"/>
+
+    <TextView
+        android:text="Total de Deducciones:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView25"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/btnTotal"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp"/>
+
+    <TextView
+        android:text="Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ResulTotalaRecibir"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView25"/>
+
+    <Button
+        android:text="Calcular total a recibir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTotal"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/TxtTotal"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText15"
+        android:layout_above="@+id/txtDeducciones"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="43dp"
+        android:layout_alignStart="@+id/editText6"/>
+
+    <TextView
+        android:text="Otras deducciones:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView24"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/editText15"
+        android:layout_alignBottom="@+id/editText15"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="Pago a empresa:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView21"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/editText15"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:layout_alignBaseline="@+id/textView21"
+        android:layout_alignBottom="@+id/textView21"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/txtDeducciones"/>
+
+    <TextView
+        android:text="Inss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtinss"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toStartOf="@+id/editText6"/>
+
+    <TextView
+        android:text="IR:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/editText6"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:text="INSS:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="IR Quincenal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IRquinc"
+        android:layout_alignBaseline="@+id/textView20"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:text="IRMensual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IRmen"
+        android:layout_alignBaseline="@+id/IRquinc"
+        android:layout_alignBottom="@+id/IRquinc"
+        android:layout_alignEnd="@+id/txtDeducciones"/>
 
 </RelativeLayout>

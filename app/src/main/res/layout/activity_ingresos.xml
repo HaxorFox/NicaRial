@@ -17,15 +17,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
 
-        <TextView
-            android:text="Vacaciones"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtVacas"
-            android:layout_alignBaseline="@+id/textView8"
-            android:layout_alignBottom="@+id/textView8"
-            android:layout_toEndOf="@+id/textHoras"/>
-
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,49 +27,6 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignStart="@+id/editText10"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:ems="10"
-            android:id="@+id/editText9"
-            android:layout_below="@+id/editText7"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="18dp"
-            android:layout_alignStart="@+id/editText7"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:ems="10"
-            android:id="@+id/editText10"
-            android:layout_below="@+id/editText9"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="19dp"
-            android:layout_alignStart="@+id/editText11"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="text|numberDecimal"
-            android:ems="10"
-            android:id="@+id/editText7"
-            android:layout_marginTop="20dp"
-            android:layout_below="@+id/editText3"
-            android:layout_alignParentEnd="true"
-            android:layout_alignStart="@+id/editText3"/>
-
-        <TextView
-            android:text="Otros Ingresos:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView13"
-            android:textStyle="normal|bold"
-            android:layout_below="@+id/textView12"
-            android:layout_alignEnd="@+id/textView5"
-            android:layout_marginTop="44dp"/>
 
         <EditText
             android:layout_width="wrap_content"
@@ -112,14 +60,13 @@
             android:layout_alignBottom="@+id/editText3"
             android:layout_alignParentStart="true"/>
 
-        <TextView
-            android:text="Viático:"
+        <Button
+            android:text="Calcular Deducciones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView12"
-            android:textStyle="normal|bold"
-            android:layout_alignTop="@+id/editText10"
-            android:layout_alignStart="@+id/textView13"/>
+            android:id="@+id/btnDedu"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textView8"/>
 
         <TextView
             android:text="Horas Extras:"
@@ -127,8 +74,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView10"
             android:textStyle="normal|bold"
-            android:layout_alignTop="@+id/editText9"
-            android:layout_alignEnd="@+id/textView8"/>
+            android:layout_alignBaseline="@+id/editText9"
+            android:layout_alignBottom="@+id/editText9"
+            android:layout_alignParentStart="true"/>
 
         <TextView
             android:text="Horas Extras"
@@ -136,27 +84,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/textHoras"
             android:textSize="14sp"
-            android:layout_alignBaseline="@+id/textView10"
-            android:layout_alignBottom="@+id/textView10"
-            android:layout_toEndOf="@+id/textView13"/>
-
-        <TextView
-            android:text="Vacaciones:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView8"
-            android:textStyle="normal|bold"
-            android:layout_below="@+id/editText11"
-            android:layout_alignEnd="@+id/textView13"
-            android:layout_marginTop="33dp"/>
-
-        <Button
-            android:text="calcular ingresos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnIngresos"
-            android:layout_below="@+id/textView8"
-            android:layout_alignEnd="@+id/txtVacas"/>
+            android:layout_alignBaseline="@+id/editText9"
+            android:layout_alignBottom="@+id/editText9"
+            android:layout_centerHorizontal="true"/>
 
         <TextView
             android:text="Total Ingresos:"
@@ -164,26 +94,99 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView14"
             android:textStyle="normal|bold"
-            android:layout_below="@+id/btnIngresos"
-            android:layout_alignEnd="@+id/textView6"/>
+            android:layout_above="@+id/btnDedu"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"/>
 
         <TextView
             android:text="Total de Ingresos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txt"
-            android:layout_below="@+id/btnIngresos"
-            android:layout_alignEnd="@+id/btnIngresos"/>
+            android:layout_alignBaseline="@+id/textView14"
+            android:layout_alignBottom="@+id/textView14"
+            android:layout_centerHorizontal="true"/>
 
         <Button
-            android:text="Calcular Deducciones"
+            android:text="calcular ingresos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:id="@+id/btnIngresos"
+            android:layout_above="@+id/textView14"
+            android:layout_toEndOf="@+id/textView10"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text|numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText7"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/editText3"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="68dp"
-            android:layout_marginBottom="13dp"
-            android:id="@+id/btnDedu"/>
+            android:layout_alignStart="@+id/editText3"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText9"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/editText7"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/editText7"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText10"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/editText9"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/editText11"/>
+
+        <TextView
+            android:text="Viático:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:textStyle="normal|bold"
+            android:layout_alignBaseline="@+id/editText10"
+            android:layout_alignBottom="@+id/editText10"
+            android:layout_alignStart="@+id/textView13"/>
+
+        <TextView
+            android:text="Otros Ingresos:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/editText10"
+            android:layout_alignEnd="@+id/textView5"/>
+
+        <TextView
+            android:text="Vacaciones:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textStyle="normal|bold"
+            android:layout_above="@+id/btnIngresos"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_marginBottom="17dp"/>
+
+        <TextView
+            android:text="Vacaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtVacas"
+            android:layout_alignBaseline="@+id/textView8"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_toEndOf="@+id/btnDedu"/>
 
     </RelativeLayout>
 

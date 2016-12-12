@@ -59,23 +59,24 @@ public class Ingresos extends AppCompatActivity {
         float vaca= (float) 2.5;
         float resulHoras = ((((num3/num1)/(horasDiarias))*(num5))*2);
         float resulvacas = ((num3/num1)*vaca);
-        float resultado = (num1+num3+num6+num7+resulHoras+vaca);
-        vac.setText(""+resulvacas);
-        ing.setText(""+resultado);
-        hr.setText(""+resulHoras);
+        float resultado = (num3+num6+num7+resulHoras);
+        vac.setText(String.format( "%.2f", resulvacas ));
+        ing.setText(String.format( "%.2f",resultado));
+        hr.setText(String.format( "%.2f",resulHoras));
 
-                Intent Resul = new Intent(Ingresos.this, DeduccionesActivity.class);
-                Resul.putExtra("resultado", resultado);
+                final Intent Resul = new Intent(Ingresos.this, DeduccionesActivity.class);
+                Resul.putExtra("resultado",String.valueOf(resultado));
+
 
 
                 Button Calc = (Button) findViewById(R.id.btnDedu);
                 //Calc = (Button) findViewById(R.id.btnDedu);
-                 //CalcDe= (Button) findViewById(R.id.btnDedu);
+                //CalcDe= (Button) findViewById(R.id.btnDedu);
 
                 Calc.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        startActivity(new Intent(Ingresos.this, DeduccionesActivity.class));
+                        startActivity(Resul);
                     }
                 });
 

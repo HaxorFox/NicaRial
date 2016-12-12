@@ -3,6 +3,7 @@ package com.nicarial.nicarial;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -32,69 +33,77 @@ public class DeduccionesActivity extends AppCompatActivity {
         // Button CalcDeduc = (Button) findViewById(R.id.btnDeducciones);
         Button CalcTotal = (Button) findViewById(R.id.btnTotal);
 
-
         final TextView inss = (TextView) findViewById(R.id.txtinss);
-        final TextView ir = (TextView) findViewById(R.id.txtirn);
+        final TextView ir = (TextView) findViewById(R.id.IRmen);
         final TextView deduc = (TextView) findViewById(R.id.txtDeducciones);
         final TextView total = (TextView) findViewById(R.id.ResulTotalaRecibir);
+        final TextView irM = (TextView) findViewById(R.id.IRquinc);
 
-        //float num1 = new Float(n9.getText().toString());
-        float num2 = new Float(n10.getText().toString());
-        float num3 = new Float(n11.getText().toString());
-        float laboral = (float) 0.0625;
+        CalcTotal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        double base = 0.0d;
-        double desde = 0.0d;
-        double exceso = 0.0d;
-        double hasta = 0.0d;
-        float porcentaje = 0;
+                //float num1 = new Float(n9.getText().toString());
+                float num2 = new Float(n10.getText().toString());
+                float num3 = new Float(n11.getText().toString());
+                float laboral = (float) 0.0625;
 
-        Bundle bundle=getIntent().getExtras();
-        int value=bundle.getInt("resultado");
+                double base = 0.0d;
+                double desde = 0.0d;
+                double exceso = 0.0d;
+                double hasta = 0.0d;
+                float porcentaje = 0;
 
-
-        float seguro = ( value* laboral);
-        float inssmensual = (value - seguro);
-
-        float anual = (inssmensual * 12);
-
-        if (anual <= 100000.0d) {
-            porcentaje = (float) 0.0d;
-            base = 0.0d;
-            exceso = 0.0d;
-        } else if (anual <= 200000.0d) {
-            porcentaje = (float)0.15d;
-            base = 0.0d;
-            exceso = 100000.0d;
-        } else if (anual <= 350000.0d) {
-            porcentaje = (float)0.2d;
-            base = 15000.0d;
-            exceso = 200000.0d;
-        } else if (anual <= 500000.0d) {
-            porcentaje = (float) 0.25d;
-            base = 45000.0d;
-            exceso = 350000.0d;
-        } else {
-            porcentaje = (float) 0.3d;
-            base= 82500.0d;
-            exceso = 500000.0d;
-        }
-
-        double iranual = ((anual - exceso) * porcentaje) + base;
-        double irmensual = (iranual / 12.0d);
-        double irquincenal = (irmensual / 2.0d);
-        double salarioNeto = (value - irmensual) - seguro;
+                Bundle bundle=getIntent().getExtras();
+                float value=Float.parseFloat(bundle.getString("resultado"));
 
 
-        double resibe = (salarioNeto - num2) - num3;
-        double totaldeduc = (inssmensual+irmensual+num2+num3);
+                float seguro = (value * laboral);
+                float inssmensual = (value - seguro);
 
-        inss.setText(""+inssmensual);
-        ir.setText(""+irmensual);
-        deduc.setText(""+totaldeduc);
-        total.setText(""+resibe);
+                float anual = (inssmensual * 12);
+
+                if (anual <= 100000.0d) {
+                    porcentaje = (float) 0.0d;
+                    base = 0.0d;
+                    exceso = 0.0d;
+                } else if (anual <= 200000.0d) {
+                    porcentaje = (float) 0.15d;
+                    base = 0.0d;
+                    exceso = 100000.0d;
+                } else if (anual <= 350000.0d) {
+                    porcentaje = (float) 0.2d;
+                    base = 15000.0d;
+                    exceso = 200000.0d;
+                } else if (anual <= 500000.0d) {
+                    porcentaje = (float) 0.25d;
+                    base = 45000.0d;
+                    exceso = 350000.0d;
+                } else {
+                    porcentaje = (float) 0.3d;
+                    base = 82500.0d;
+                    exceso = 500000.0d;
+                }
+
+                double iranual = ((anual - exceso) * porcentaje) + base;
+                double irmensual = (iranual / 12.0d);
+                double irquincenal = (irmensual / 2.0d);
+                double salarioNeto = (value - irmensual) - seguro;
 
 
+                double resibe = (salarioNeto - num2) - num3;
+                double totaldeduc = (inssmensual + irmensual + num2 + num3);
+
+                inss.setText(String.format( " %.2f",seguro));
+                ir.setText(String.format( "%.2f",irmensual));
+                irM.setText(String.format( "%.2f",irquincenal));
+                deduc.setText(String.format( "%.2f",totaldeduc));
+                total.setText(String.format( "%.2f",resibe));
+
+            }
+
+            ;
+        });
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
