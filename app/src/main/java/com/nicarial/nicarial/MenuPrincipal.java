@@ -23,8 +23,7 @@ public class MenuPrincipal extends AppCompatActivity {
         setContentView(R.layout.activity_menu_principal);
         ButterKnife.bind(this);
         welcomeScreen = new WelcomeHelper(this, MyWelcomeActivity.class);
-        //welcomeScreen.show(savedInstanceState);
-        welcomeScreen.forceShow();
+        welcomeScreen.show(savedInstanceState);
 
 
         Button btn_deduc = (Button) findViewById(R.id.btn_deduc);
