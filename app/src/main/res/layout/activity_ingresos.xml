@@ -186,7 +186,7 @@
             android:id="@+id/txtVacas"
             android:layout_alignBaseline="@+id/textView8"
             android:layout_alignBottom="@+id/textView8"
-            android:layout_toEndOf="@+id/btnDedu"/>
+            android:layout_toEndOf="@+id/btnIngresos"/>
 
     </RelativeLayout>
 
