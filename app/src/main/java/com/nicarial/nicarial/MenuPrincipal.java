@@ -7,12 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.stephentuso.welcome.WelcomeHelper;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MenuPrincipal extends AppCompatActivity {
-
+    WelcomeHelper welcomeScreen;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -20,6 +22,9 @@ public class MenuPrincipal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
         ButterKnife.bind(this);
+        welcomeScreen = new WelcomeHelper(this, MyWelcomeActivity.class);
+        //welcomeScreen.show(savedInstanceState);
+        welcomeScreen.forceShow();
 
 
         Button btn_deduc = (Button) findViewById(R.id.btn_deduc);
@@ -66,7 +71,11 @@ public class MenuPrincipal extends AppCompatActivity {
         }
 
 
-
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        welcomeScreen.onSaveInstanceState(outState);
+    }
 
 
     }

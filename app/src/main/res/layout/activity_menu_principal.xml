@@ -57,15 +57,6 @@
             android:layout_weight="0.25"
             android:layout_marginBottom="8dp">
 
-            <Button
-                android:text="FeedBack"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/btn_feed"
-                android:background="@color/gray"
-                android:elevation="1dp"
-                android:gravity="bottom|center_horizontal" />
-
             <ImageView
                 app:srcCompat="@drawable/chat"
                 android:id="@+id/ivfeedback"
@@ -74,6 +65,17 @@
                 android:layout_marginTop="20dp"
                 android:layout_width="50dp"
                 android:layout_height="50dp" />
+
+            <Button
+                android:text="FeedBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_feed"
+                android:background="@color/gray"
+                android:elevation="1dp"
+                android:gravity="bottom|center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
 
         </RelativeLayout>
 
