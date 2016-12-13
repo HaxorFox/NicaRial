@@ -54,11 +54,11 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText15"
+        android:id="@+id/txtOtrasDeducciones"
         android:layout_above="@+id/txtDeducciones"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="43dp"
-        android:layout_alignStart="@+id/editText6" />
+        android:layout_alignStart="@+id/txtPagoEmpresa" />
 
     <TextView
         android:text="Otras deducciones:"
@@ -66,8 +66,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView24"
         android:textStyle="normal|bold"
-        android:layout_alignBaseline="@+id/editText15"
-        android:layout_alignBottom="@+id/editText15"
+        android:layout_alignBaseline="@+id/txtOtrasDeducciones"
+        android:layout_alignBottom="@+id/txtOtrasDeducciones"
         android:layout_alignParentStart="true" />
 
     <TextView
@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView21"
         android:textStyle="normal|bold"
-        android:layout_above="@+id/editText15"
+        android:layout_above="@+id/txtOtrasDeducciones"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="20dp" />
 
@@ -85,7 +85,7 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText6"
+        android:id="@+id/txtPagoEmpresa"
         android:layout_alignBaseline="@+id/textView21"
         android:layout_alignBottom="@+id/textView21"
         android:layout_alignParentEnd="true"
@@ -97,7 +97,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView20"
         android:textStyle="normal|bold"
-        android:layout_above="@+id/editText6"
+        android:layout_above="@+id/txtPagoEmpresa"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="50dp" />
 

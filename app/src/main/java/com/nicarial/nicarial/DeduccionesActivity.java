@@ -13,8 +13,6 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import butterknife.BindView;
-
 public class DeduccionesActivity extends AppCompatActivity {
     EditText n9, n10, n11;
     /**
@@ -30,8 +28,8 @@ public class DeduccionesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_deducciones);
 
         //n9 = (EditText) findViewById(R.id.txtirn);
-        n10 = (EditText) findViewById(R.id.editText6);
-        n11 = (EditText) findViewById(R.id.editText15);
+        n10 = (EditText) findViewById(R.id.txtPagoEmpresa);
+        n11 = (EditText) findViewById(R.id.txtOtrasDeducciones);
 
         // Button CalcDeduc = (Button) findViewById(R.id.btnDeducciones);
         Button CalcTotal = (Button) findViewById(R.id.btnTotal);
@@ -95,7 +93,7 @@ public class DeduccionesActivity extends AppCompatActivity {
 
 
                 double resibe = (salarioNeto - num2) - num3;
-                double totaldeduc = (inssmensual + irmensual + num2 + num3);
+                double totaldeduc = (seguro + irmensual + num2 + num3);
 
                 inss.setText(String.format(" %.2f", seguro));
                 ir.setText(String.format("%.2f", irmensual));
